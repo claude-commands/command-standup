@@ -12,12 +12,14 @@ Generate a standup for the default timeframe (24 hours, or 72 hours on Mondays).
 **Usage:** `/standup [timeframe]`
 
 **Examples:**
+
 - `/standup` - Last 24 hours (72h on Mondays)
 - `/standup 48h` - Last 48 hours
 - `/standup 3d` - Last 3 days
 - `/standup "since monday"` - Since Monday
 
 **Workflow:**
+
 1. Scan git commits for your user
 2. Group by type (features, fixes, refactors)
 3. Identify in-progress work and blockers
@@ -55,7 +57,8 @@ Generate a standup summary from recent git activity using the specified timefram
 3. **Identify In-Progress Work**
    - Check current branch: `git branch --show-current`
    - Check uncommitted changes: `git status --porcelain`
-   - List recent branches: `git branch --sort=-committerdate --format='%(refname:short) %(committerdate:relative)' | head -5`
+   - List recent branches:
+     `git branch --sort=-committerdate --format='%(refname:short) %(committerdate:relative)' | head -5`
    - Look for WIP commits or stash entries: `git stash list`
 
 4. **Detect Potential Blockers**
@@ -67,7 +70,7 @@ Generate a standup summary from recent git activity using the specified timefram
 
    Format the output as:
 
-   ```
+   ```text
    ## Standup - [date]
 
    ### Yesterday (Completed)

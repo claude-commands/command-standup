@@ -10,15 +10,15 @@ git clone git@github.com:claude-commands/command-standup.git <clone-path>/comman
 
 # Symlink (use full path to cloned repo)
 ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
-```
+```text
 
 ## Usage
 
-```
+```text
 /standup         # Last 24 hours (or 72h on Mondays)
 /standup 48h     # Custom timeframe
 /standup 3d      # Last 3 days
-```
+```text
 
 ## What it does
 
@@ -30,7 +30,7 @@ ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 
 ## Output Format
 
-```
+```text
 ## Standup - Nov 26, 2025
 
 ### Yesterday (Completed)
@@ -43,7 +43,7 @@ ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 
 ### Blockers
 - None
-```
+```text
 
 ## Features
 
@@ -61,4 +61,4 @@ ln -s <clone-path>/command-standup/standup.md ~/.claude/commands/standup.md
 
 ```bash
 cd <clone-path>/command-standup && git pull
-```
+```text
