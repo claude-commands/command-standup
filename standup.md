@@ -1,7 +1,7 @@
 ---
 argument-hint: "[hours|days]"
 description: "Generate standup notes from recent git activity"
-model: claude-sonnet-4-20250514
+model: claude-opus-4-5-20251101
 allowed-tools: ["Bash", "Read", "Glob", "Grep"]
 ---
 
